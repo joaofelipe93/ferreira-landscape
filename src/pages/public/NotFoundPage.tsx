@@ -50,7 +50,7 @@ export function NotFoundPage() {
 
         {/* Primary CTA */}
         <Link
-          to="/site"
+          to="/"
           className="inline-block bg-[#FC8700] text-white font-semibold text-sm tracking-wide px-7 py-[14px] rounded-full transition-all duration-200 hover:scale-105 hover:shadow-md w-full sm:w-auto animate-in fade-in duration-700 delay-300"
         >
           Back to Home
