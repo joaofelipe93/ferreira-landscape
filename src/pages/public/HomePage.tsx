@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import {
   Phone, Plus, MapPin, Check, Mail, Clock, Star, MessageCircle,
   ArrowRight, ExternalLink, ChevronLeft, ChevronRight, Calendar, ClipboardList,
-  Sparkles, X, Shield, Award, TrendingUp, Leaf,
+  Sparkles, X, Shield, Award, Leaf,
   LayoutGrid, Layers, Flame, ChevronsUp, Wrench,
 } from 'lucide-react'
 import { testimonials as defaultTestimonials } from '@/data/testimonials'
@@ -314,7 +314,7 @@ export function HomePage() {
           {/* Eyebrow badge */}
           <div className="mb-10 inline-flex items-center gap-3 rounded-full glass px-8 py-3 text-[11px] font-archivo uppercase tracking-[0.4em] text-white/90 shadow-2xl animate-fade-in-up">
             <div className="flex h-1.5 w-1.5 rounded-full bg-secondary animate-pulse" />
-            <span>South Shore Signature Property Care</span>
+            <span>Lawn Mowing &amp; Hardscape — South Shore, MA</span>
           </div>
 
           {/* Headline */}
@@ -621,116 +621,6 @@ export function HomePage() {
             </div>
           </div>
 
-          <div className="relative mb-24">
-            <hr className="border-[#f0f0f0]" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white px-4">
-              <div className="w-2 h-2 rounded-full bg-secondary/30" />
-            </div>
-          </div>
-
-          {/* 2. Lawn Health & Restoration */}
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-24">
-            <div className="rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.1)] h-[400px] lg:h-[500px] order-2 lg:order-1 reveal-left group relative">
-              <img src="/lawn_health_restoration.webp" alt="Healthy restored lawn showing quality grass" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#162557]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            </div>
-            <div className="order-1 lg:order-2 reveal-right">
-              <div className="inline-flex items-center gap-2 bg-[#53A245]/10 text-[#53A245] text-[11px] font-bold uppercase tracking-widest rounded-full px-4 py-2 mb-6">
-                <TrendingUp className="w-3.5 h-3.5" /> Lawn Health
-              </div>
-              <h3 className="text-2xl md:text-3xl font-semibold text-[#162557] mb-4">
-                Lawn Health & Restoration
-              </h3>
-              <p className="text-[15px] md:text-[16px] text-[#555] leading-[1.7] mb-8">
-                A beautiful lawn starts below the surface. Our science-backed programs restore, strengthen, and protect your turf year after year.
-              </p>
-              <ul className="space-y-3 mb-8">
-                {[
-                  { t: 'Aeration & Overseeding',   d: 'Break through compaction and introduce new seed for a denser, healthier lawn.' },
-                  { t: 'Fertilization Programs',   d: 'Seasonal nutrient plans tailored to your soil and grass type.' },
-                  { t: 'Weed Control',             d: 'Pre- and post-emergent treatments that keep weeds from taking over.' },
-                  { t: 'Irrigation Systems',       d: 'Smart watering solutions that protect your investment and reduce waste.' },
-                  { t: 'Drainage Solutions',       d: 'Fix pooling and runoff issues before they damage your lawn and foundation.' },
-                ].map((item) => (
-                  <li key={item.t} className="flex items-start gap-3 group">
-                    <div className="w-5 h-5 rounded-full bg-secondary/10 flex items-center justify-center shrink-0 mt-[2px] group-hover:bg-secondary transition-colors duration-300">
-                      <Check className="w-3 h-3 text-secondary group-hover:text-white transition-colors" />
-                    </div>
-                    <span className="text-[15px] text-[#444] leading-relaxed">
-                      <span className="font-semibold text-[#162557]">{item.t}</span> — {item.d}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-8">
-                <a
-                  href={estimateUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 bg-[#FC8700] hover:bg-[#e07600] text-white font-bold text-[14px] px-6 py-3 rounded-full shadow-lg transition-all hover:-translate-y-1 group"
-                >
-                  Restore Your Lawn
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </a>
-              </div>
-            </div>
-           </div>
-
-          <div className="relative mb-24">
-            <hr className="border-[#f0f0f0]" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white px-4">
-              <div className="w-2 h-2 rounded-full bg-secondary/30" />
-            </div>
-          </div>
-
-          {/* 3. Landscape Design & Installation */}
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start mb-24">
-            <div className="rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.1)] h-[420px] lg:h-[540px] reveal-left group relative">
-              <img src="/landscape_design_installation.webp" alt="New landscape and sod installation process" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#162557]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            </div>
-            <div className="reveal-right">
-              <div className="inline-flex items-center gap-2 bg-[#162557]/10 text-[#162557] text-[11px] font-bold uppercase tracking-widest rounded-full px-4 py-2 mb-6">
-                <Sparkles className="w-3.5 h-3.5" /> Design & Build
-              </div>
-              <h3 className="text-2xl md:text-3xl font-semibold text-[#162557] mb-4">
-                Landscape Design & Installation
-              </h3>
-              <p className="text-[15px] md:text-[16px] text-[#555] leading-[1.7] mb-8">
-                Ready to take your property from ordinary to outstanding? Our design and installation team brings your vision to life — from the first sketch to the final plant.
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {[
-                  { t: 'Sod Installation & Hydroseeding', d: 'Instant or gradual — we match the solution to your timeline and budget.' },
-                  { t: 'Planting & Garden Design',         d: 'Curated plantings that look beautiful and thrive in New England conditions.' },
-                  { t: 'Irrigation Systems',               d: 'Efficient watering built in from the start.' },
-                  { t: 'Outdoor Lighting',                 d: 'Landscape lighting that highlights your best features after dark.' },
-                  { t: 'Drainage Solutions',               d: 'Smart grading and drainage that protects the investment you just made.' },
-                ].map((item) => (
-                  <div key={item.t} className="p-4 rounded-xl bg-[#f8f9fb] border border-black/5 hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 group">
-                    <div className="flex items-center gap-2 mb-2">
-                      <div className="w-4 h-4 rounded-full bg-secondary/10 flex items-center justify-center group-hover:bg-secondary transition-colors duration-300">
-                        <Check className="w-2.5 h-2.5 text-secondary group-hover:text-white transition-colors" />
-                      </div>
-                      <span className="text-[13px] font-semibold text-[#162557]">{item.t}</span>
-                    </div>
-                    <p className="text-[12px] text-[#666] leading-relaxed">{item.d}</p>
-                  </div>
-                ))}
-              </div>
-              <div className="mt-10">
-                <a
-                  href={estimateUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 bg-[#162557] hover:bg-[#0f1e42] text-white font-bold text-[14px] px-7 py-3.5 rounded-full shadow-lg transition-all hover:-translate-y-1 group"
-                >
-                  Start Your Project
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -913,15 +803,7 @@ export function HomePage() {
                 <p className="text-[16px] md:text-[17px] text-white/80 leading-[1.7]">
                   Most homeowners spend{' '}
                   <span className="font-semibold text-white">4 to 6 hours every weekend</span>
-                  {' '}trying to keep up with their yard. That's time you could be spending with your kids, your partner, or simply enjoying the outdoor space you've worked so hard to have.
-                </p>
-                <p className="text-[16px] md:text-[17px] text-white/80 leading-[1.7]">
-                  Our residential programs are designed to{' '}
-                  <span className="font-semibold text-white">give that time back</span>
-                  . We handle every detail — mowing, edging, pruning, fertilizing, seasonal cleanups — so your property always looks its best without you having to lift a finger.
-                </p>
-                <p className="text-[16px] md:text-[17px] text-white/80 leading-[1.7]">
-                  And because every home is different, we don't do one-size-fits-all packages. We build your plan around your property's specific grass type, soil conditions, sun exposure, and aesthetic goals.
+                  {' '}trying to keep up with their yard. We handle the mowing, edging, pruning, and cleanups — so you can enjoy your outdoor space instead of working on it.
                 </p>
               </div>
 
@@ -975,19 +857,9 @@ export function HomePage() {
 
               <div className="space-y-4 mb-8 max-w-[520px]">
                 <p className="text-[16px] md:text-[17px] text-[#444] leading-[1.7]">
-                  Your property is{' '}
+                  Your grounds are{' '}
                   <span className="font-semibold text-[#162557]">part of your brand</span>
-                  . When clients, prospects, and tenants arrive, the condition of your grounds sets the tone before a single conversation begins.
-                </p>
-                <p className="text-[16px] md:text-[17px] text-[#444] leading-[1.7]">
-                  Our commercial crews are{' '}
-                  <span className="font-semibold text-[#162557]">professional, detail-oriented, and trustworthy</span>
-                  . We operate on a defined schedule, deliver consistent results, and communicate proactively.
-                </p>
-                <p className="text-[16px] md:text-[17px] text-[#444] leading-[1.7]">
-                  We work around your business hours to ensure{' '}
-                  <span className="font-semibold text-[#162557]">zero disruption</span>
-                  {' '}to your operations, tenants, or customers.
+                  . We run on a defined schedule, show up reliably, and work around your business hours so there's zero disruption to your operations.
                 </p>
               </div>
 
@@ -1060,11 +932,8 @@ export function HomePage() {
             </p>
           </div>
 
-          <p className="text-[17px] md:text-[18px] italic font-medium text-white/90 leading-[1.7] mb-6 max-w-[640px] mx-auto reveal">
-            This isn't just a policy. It's how we were raised to do business.
-          </p>
           <p className="text-[16px] md:text-[17px] text-white/70 leading-[1.7] max-w-[640px] mx-auto mb-12 reveal">
-            Your property should make you proud every single time you pull into the driveway. That's the standard we hold ourselves to — and the promise we make to every client.
+            Your property should make you proud every time you pull into the driveway. That's the standard we hold ourselves to.
           </p>
 
           <div className="inline-flex items-center gap-3 glass rounded-full px-6 py-3 reveal">
@@ -1399,35 +1268,23 @@ export function HomePage() {
           <div className="bg-white rounded-3xl border border-black/5 px-6 md:px-10 pb-6 reveal">
             <FaqItem
               q="How often should my lawn be mowed?"
-              a="During the growing season (May through October in Massachusetts), most lawns need weekly or bi-weekly mowing depending on grass type and growth rate. We'll recommend the right frequency for your specific property during your consultation."
-            />
-            <FaqItem
-              q="What's the difference between sod and hydroseeding?"
-              a="Sod gives you an instant lawn — it's rolled out and looks great immediately. Hydroseeding is a more cost-effective option that sprays a seed-and-mulch mixture across your lawn, growing in over a few weeks. Both produce excellent results; the right choice depends on your timeline and budget."
-            />
-            <FaqItem
-              q="When should I schedule a spring cleanup?"
-              a="Ideally, late March through April — once the ground has dried out and temperatures are consistently above freezing. Early cleanup prevents weeds from getting a head start and sets your lawn up for a strong growing season."
+              a="During the growing season (May through October in Massachusetts), most lawns need weekly or bi-weekly mowing. We'll recommend the right frequency for your property during your free estimate."
             />
             <FaqItem
               q="Do you offer one-time services or only ongoing programs?"
-              a="Both. We offer ongoing maintenance programs as well as one-time services like cleanups, mulch installation, and aeration. That said, most clients find that ongoing programs deliver the best long-term results — and the best value."
+              a="Both. We offer ongoing maintenance plans as well as one-time services like cleanups, mulch installation, and aeration. Most clients find an ongoing program delivers the best results and the best value."
             />
             <FaqItem
               q="What if I'm not happy with the work?"
-              a="We come back and make it right — at no additional charge. We don't consider a job done until you're satisfied. That's our guarantee, and we stand behind it completely."
+              a="We come back and make it right — no extra charge, no arguments. We don't consider a job done until you're satisfied."
             />
             <FaqItem
-              q="Do you serve both residential and commercial properties?"
-              a="Yes. We work with homeowners, property managers, HOA communities, and commercial properties throughout the South Shore. Every program is customized to the property's specific needs."
-            />
-            <FaqItem
-              q="Do you also design and build outdoor living spaces?"
-              a="Absolutely. Our hardscape team designs and builds patios, walkways, retaining walls, fire pits, outdoor fireplaces, stone steps, and complete outdoor living areas. For larger projects, we work with a professional designer to create a 3D visual before construction begins — so you can see exactly what your space will look like."
+              q="Do you build patios, walkways, and retaining walls?"
+              a="Yes. Our hardscape team designs and builds patios, walkways, retaining walls, fire pits, stone steps, and outdoor kitchens. We walk you through the design before any construction begins."
             />
             <FaqItem
               q="How do I get started?"
-              a="Call or text us at +1 (781) 490-8272, or send an email to contact@ferreiralandscape.com. We'll schedule a free on-site consultation, walk your property together, and build a plan around what it actually needs."
+              a="Call or text us at +1 (781) 490-8272, or use the form below. We'll schedule a free on-site estimate, walk your property, and build a plan around what it actually needs."
               highlight
             />
           </div>
@@ -1505,12 +1362,8 @@ export function HomePage() {
             <span className="text-gradient-orange block">Starts Now.</span>
           </h2>
 
-          <p className="text-[16px] md:text-[18px] text-white/85 leading-[1.7] mb-5 max-w-[720px] mx-auto reveal">
-            Stop putting it off. Whether your lawn needs a fresh start, your beds need attention, your outdoor space needs a complete transformation — or you just want someone you can finally rely on — we're ready.
-          </p>
-
-          <p className="text-[17px] md:text-[18px] font-semibold text-white/95 mb-10 reveal">
-            Ferreira Landscape. Consistent care. Exceptional results. Zero headaches.
+          <p className="text-[16px] md:text-[18px] text-white/85 leading-[1.7] mb-10 max-w-[640px] mx-auto reveal">
+            Lawn mowing, hardscape, or seasonal cleanups — we're ready. Reliable crews, consistent results, free estimate.
           </p>
 
           <div className="mb-8 reveal">
