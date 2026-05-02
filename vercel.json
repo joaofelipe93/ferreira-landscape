@@ -1,4 +1,8 @@
 {
+  "redirects": [
+    { "source": "/admin", "destination": "/not-found" },
+    { "source": "/admin/(.*)", "destination": "/not-found" }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ],
