@@ -1,0 +1,6 @@
+export { services } from './services'
+export { locations } from './locations'
+export { blogPosts } from './blog'
+export { testimonials } from './testimonials'
+export { teamMembers } from './team'
+export { stats } from './stats'
