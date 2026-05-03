@@ -1,5 +1,11 @@
-export function AboutPage() {
+import { useSEO } from '@/hooks/useSEO'
 
+export function AboutPage() {
+  useSEO({
+    title: 'About Ferreira Landscape | South Shore MA Landscaping',
+    description: 'Learn about Ferreira Landscape — a South Shore MA company serving Hingham, Cohasset, Duxbury and surrounding communities with lawn care and hardscape.',
+    canonical: '/about',
+  })
 
   return (
     <div className="bg-white">

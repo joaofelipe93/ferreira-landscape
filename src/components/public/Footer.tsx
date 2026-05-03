@@ -5,7 +5,7 @@ const services = [
   { label: 'Lawn & Property Maintenance', href: '/services' },
   { label: 'Lawn Health & Restoration', href: '/services' },
   { label: 'Landscape Design & Installation', href: '/services' },
-  { label: 'Hardscape Services', href: '/hardscape-services' },
+  { label: 'Hardscape Services', href: '/hardscape' },
   { label: 'Snow & Ice Management', href: '/services' },
 ]
 

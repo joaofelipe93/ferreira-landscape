@@ -1,4 +1,5 @@
 import { SectionContainer } from '@/components/public/SectionContainer'
+import { useSEO } from '@/hooks/useSEO'
 
 const colors = [
   { name: 'Green Park', hex: '#26cf7b', class: 'bg-green-park', type: 'Primary 01' },
@@ -12,6 +13,11 @@ const colors = [
 const fontWeights = ['Thin', 'Light', 'Regular', 'Medium', 'Semi Bold', 'Bold', 'Black']
 
 export function DesignSystemPage() {
+  useSEO({
+    title: 'Design System | Ferreira Landscape',
+    description: 'Internal design system.',
+    noindex: true,
+  })
   return (
     <div className="min-h-screen bg-white">
       <SectionContainer>

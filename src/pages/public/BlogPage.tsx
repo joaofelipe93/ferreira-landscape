@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useSEO } from '@/hooks/useSEO'
 import { Search } from 'lucide-react'
 import { Input } from '@/components/ui/input'
 import { SectionContainer } from '@/components/public/SectionContainer'
@@ -7,6 +8,11 @@ import { useCmsStore } from '@/stores/cmsStore'
 import { cn } from '@/lib/utils'
 
 export function BlogPage() {
+  useSEO({
+    title: 'Landscaping Tips & Blog | Ferreira Landscape South Shore',
+    description: 'Lawn care tips, hardscape ideas, and landscaping advice for South Shore, MA homeowners from Ferreira Landscape.',
+    canonical: '/blog',
+  })
   const allPosts = useCmsStore((s) => s.blogPosts).filter((p) => p.status === 'published')
   const [search, setSearch] = useState('')
   const [activeTag, setActiveTag] = useState<string | null>(null)

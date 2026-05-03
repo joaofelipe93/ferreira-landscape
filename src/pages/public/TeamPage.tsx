@@ -2,8 +2,14 @@ import { SectionContainer, SectionHeader } from '@/components/public/SectionCont
 import { TeamCard } from '@/components/public/TeamCard'
 import { CtaBlock } from '@/components/public/CtaBlock'
 import { useCmsStore } from '@/stores/cmsStore'
+import { useSEO } from '@/hooks/useSEO'
 
 export function TeamPage() {
+  useSEO({
+    title: 'Our Team | Ferreira Landscape South Shore MA',
+    description: 'Meet the Ferreira Landscape team — experienced landscaping professionals serving South Shore, MA families and businesses.',
+    canonical: '/team',
+  })
   const teamMembers = useCmsStore((s) => s.teamMembers)
     .filter((m) => m.status === 'published')
     .sort((a, b) => a.order - b.order)

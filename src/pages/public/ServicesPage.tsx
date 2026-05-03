@@ -1,4 +1,5 @@
 import { Check } from 'lucide-react'
+import { useSEO } from '@/hooks/useSEO'
 
 // ── Copy & data ───────────────────────────────────────────────────────────────
 
@@ -99,6 +100,12 @@ function SectionImage({ src, alt, className = '' }: { src: string; alt: string; 
 // ── ServicesPage ──────────────────────────────────────────────────────────────
 
 export function ServicesPage() {
+  useSEO({
+    title: 'Landscaping Services South Shore MA | Ferreira Landscape',
+    description: 'Full-service landscaping in South Shore, MA: lawn mowing, hardscape, snow removal, and more. Free estimates for homeowners and commercial properties.',
+    canonical: '/services',
+  })
+
   return (
     <div className="bg-white">
 

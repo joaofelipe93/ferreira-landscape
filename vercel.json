@@ -1,7 +1,10 @@
 {
   "redirects": [
-    { "source": "/admin", "destination": "/not-found" },
-    { "source": "/admin/(.*)", "destination": "/not-found" }
+    { "source": "/admin",              "destination": "/not-found", "permanent": false },
+    { "source": "/admin/(.*)",         "destination": "/not-found", "permanent": false },
+    { "source": "/hardscape-services", "destination": "/hardscape", "permanent": true },
+    { "source": "/new",                "destination": "/",          "permanent": true },
+    { "source": "/result",             "destination": "/",          "permanent": true }
   ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }

@@ -8,6 +8,7 @@ import {
 } from 'lucide-react'
 import { testimonials as defaultTestimonials } from '@/data/testimonials'
 import { LandingHeader } from '@/components/public/LandingHeader'
+import { useSEO } from '@/hooks/useSEO'
 
 /* ─── Scroll Reveal Hook ──────────────────────────────────────────────────── */
 function useScrollReveal() {
@@ -208,6 +209,11 @@ function TestimonialsCarousel({ items }: { items: typeof defaultTestimonials }) 
 const estimateUrl = 'https://clienthub.getjobber.com/hubs/c144b3b0-97d1-4b17-94f5-a8dbdeed9417/public/requests/2470408/new?utm_source=google&source=social_media'
 
 export function HomePage() {
+  useSEO({
+    title: 'Landscaping & Hardscape in South Shore MA | Ferreira Landscape',
+    description: 'Expert lawn mowing and hardscape installation in South Shore, MA. Free estimates. Serving Hingham, Cohasset, Duxbury and surrounding communities.',
+    canonical: '/',
+  })
   useScrollReveal()
 
   const [lightbox, setLightbox] = useState<{ src: string; alt: string } | null>(null)

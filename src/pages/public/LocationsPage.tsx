@@ -2,8 +2,14 @@ import { SectionContainer, SectionHeader } from '@/components/public/SectionCont
 import { LocationCard } from '@/components/public/LocationCard'
 import { CtaBlock } from '@/components/public/CtaBlock'
 import { useCmsStore } from '@/stores/cmsStore'
+import { useSEO } from '@/hooks/useSEO'
 
 export function LocationsPage() {
+  useSEO({
+    title: 'Service Areas South Shore MA | Ferreira Landscape',
+    description: 'Ferreira Landscape serves Hingham, Cohasset, Duxbury, Scituate, Norwell, Marshfield, and surrounding South Shore communities.',
+    canonical: '/locations',
+  })
   const locations = useCmsStore((s) => s.locations).filter((l) => l.status === 'published')
 
   return (

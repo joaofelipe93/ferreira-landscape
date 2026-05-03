@@ -28,8 +28,6 @@ import { SnowRemovalPage } from '@/pages/public/SnowRemovalPage'
 import { PrivacyPolicyPage } from '@/pages/public/PrivacyPolicyPage'
 import { TermsOfServicesPage } from '@/pages/public/TermsOfServicesPage'
 import { NotFoundPage } from '@/pages/public/NotFoundPage'
-import { NewPage } from '@/pages/public/NewPage'
-import { ResultPage } from '@/pages/public/ResultPage'
 
 // Admin Pages
 import { DashboardPage } from '@/pages/admin/DashboardPage'
@@ -99,13 +97,10 @@ export default function App() {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/lawn-care" element={<LawnCarePage />} />
             <Route path="/hardscape" element={<HardscapeServicesPage />} />
-            <Route path="/hardscape-services" element={<HardscapeServicesPage />} />
             <Route path="/snow-removal" element={<SnowRemovalPage />} />
             <Route path="/design" element={<DesignSystemPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
             <Route path="/terms-of-services" element={<TermsOfServicesPage />} />
-            <Route path="/new" element={<NewPage />} />
-            <Route path="/result" element={<ResultPage />} />
           </Route>
 
           {/* Admin CMS — only available in development */}

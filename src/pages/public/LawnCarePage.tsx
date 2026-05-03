@@ -1,12 +1,12 @@
-import { useEffect } from 'react'
 import { ArrowRight, Check, Phone } from 'lucide-react'
+import { useSEO } from '@/hooks/useSEO'
 
 export function LawnCarePage() {
-  useEffect(() => {
-    document.title = 'Lawn Care & Maintenance | Ferreira Landscape (South Shore, MA)'
-    const meta = document.querySelector('meta[name="description"]')
-    if (meta) meta.setAttribute('content', 'Weekly lawn care and maintenance across South Shore, MA. Clean edges, seasonal cleanups, and reliable crews. Request a free estimate.')
-  }, [])
+  useSEO({
+    title: 'Lawn Mowing Service South Shore MA | Ferreira Landscape',
+    description: 'Professional lawn mowing and maintenance in South Shore, MA. Reliable weekly service, clean edges, and seasonal cleanups. Get your free estimate today.',
+    canonical: '/lawn-care',
+  })
 
   return (
     <div className="bg-white">

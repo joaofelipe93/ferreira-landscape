@@ -1,7 +1,13 @@
 import { useEffect, useState } from 'react'
 import { Phone, Mail, ArrowRight } from 'lucide-react'
+import { useSEO } from '@/hooks/useSEO'
 
 export function ContactPage() {
+  useSEO({
+    title: 'Contact Us — Free Estimate | Ferreira Landscape South Shore',
+    description: 'Get a free estimate for lawn care or hardscape in South Shore, MA. Call (781) 490-8272 or submit our form. We respond within 1 business day.',
+    canonical: '/contact',
+  })
   const [submitted, setSubmitted] = useState(false)
   const divId = 'c144b3b0-97d1-4b17-94f5-a8dbdeed9417-4613287'
 

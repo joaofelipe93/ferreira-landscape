@@ -1,12 +1,12 @@
-import { useEffect } from 'react'
 import { ArrowRight, Check, Phone } from 'lucide-react'
+import { useSEO } from '@/hooks/useSEO'
 
 export function SnowRemovalPage() {
-  useEffect(() => {
-    document.title = 'Snow Removal & Ice Control | Ferreira Landscape (South Shore, MA)'
-    const meta = document.querySelector('meta[name="description"]')
-    if (meta) meta.setAttribute('content', 'Snow removal and ice control across South Shore, MA. Driveway plowing, walkway clearing, and reliable winter response. Get a free estimate.')
-  }, [])
+  useSEO({
+    title: 'Snow Removal Service South Shore MA | Ferreira Landscape',
+    description: 'Reliable snow plowing and ice control in South Shore, MA. Residential and commercial. Prompt response for Hingham, Cohasset, Duxbury and surrounding areas.',
+    canonical: '/snow-removal',
+  })
 
   return (
     <div className="bg-white">

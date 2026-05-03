@@ -1,12 +1,12 @@
-import { useEffect } from 'react'
 import { ArrowRight, Check, Phone } from 'lucide-react'
+import { useSEO } from '@/hooks/useSEO'
 
 export function HardscapeServicesPage() {
-  useEffect(() => {
-    document.title = 'Hardscape Services | Ferreira Landscape (South Shore, MA)'
-    const meta = document.querySelector('meta[name="description"]')
-    if (meta) meta.setAttribute('content', 'Hardscape services across South Shore, MA: patios, walkways, retaining walls, steps, and outdoor living built to last.')
-  }, [])
+  useSEO({
+    title: 'Paver Patio & Hardscape Installation South Shore MA | Ferreira',
+    description: 'Custom patios, walkways, retaining walls, and fire pits in South Shore, MA. Free design consultation. Serving Hingham, Cohasset & Duxbury.',
+    canonical: '/hardscape',
+  })
 
   return (
     <div className="bg-white">
